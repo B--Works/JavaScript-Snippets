@@ -35,7 +35,6 @@ $(function () {
 
     // If the DOB fields have values, and the date entered does not meet requirements, disable the submit button
     if (dobYear > 0 && dobMonth > 0 && dobDay > 0 && dob > min) {
-      console.log('you are too young');
       document.getElementById('register-button').disabled = true;
     } else {
       document.getElementById('register-button').disabled = false;
